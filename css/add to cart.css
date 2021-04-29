@@ -1,0 +1,191 @@
+body{margin: auto;background-color:#F8F9FA;}
+
+i{cursor: pointer;}
+
+h1,h2,h3,h5,p,i,a,text,button,input,label{font-family: 'Play', sans-serif;}
+::selection{background-color: rgba(0,0,0,.3);color: #fff;}
+
+
+nav{background-color: #010a11}
+nav h1{
+    color: #a6a9b6;
+    padding-top: 1.1rem;
+    padding-bottom: 1rem;
+    text-transform: uppercase;
+    font-size: 2.5rem;}
+
+nav span{color: #db6400;}
+nav form input, nav form button{height: 3rem !important;border: none !important;margin-top: 1.2rem !important;}
+nav form input{border-top-right-radius: 0% !important; border-bottom-right-radius: 0% !important;}
+nav form button{
+    width: 9rem !important;
+    border-top-left-radius: 0% !important;
+    border-bottom-left-radius: 0% !important;
+    background-color: #16697a !important;
+    color: #f7f6e7 !important;
+    font-size: 1.1rem !important;
+    transition: .6s ease !important;
+    margin-right: 1rem !important;}
+nav form button:hover{background-color: #db6400 !important;color: #ffffff !important;}
+/* help icons*/
+.icons .icon {
+    direction: rtl;
+    top: 12rem;
+    background-color:#ffffff;
+    font-size: 1.6rem !important;
+    z-index: 9999;
+}
+.icons .icon i{transition: .5s ease-in-out;color: #16697a;font-size: 1.5rem;}
+.icons .icon i:hover{color: #db6400;} 
+/* help icons*/
+
+/* content */
+.content{margin-top: 6rem;}
+.container .row img{width: 100%;}
+.container .row .data .form-select{width: 30% !important; margin-bottom: 3rem;}
+.container .row .data h5 span{color: #16697a;}
+.container .row .data button{width: 12rem;transition: .8s ease;}
+.container .row .data button:hover{color: #ffffff;background-color: #db6400;}
+/* content */
+
+
+/* footer */
+
+/* about Us */
+.aboutUs{background-color: #010a11;margin-top: 7rem;}
+.aboutUs h2, .aboutUs p{color: #a6a9b6;}
+/* about Us */
+
+footer i{color: #16697a;transition: .6s ease ;}
+footer i:hover{color: #db6400 ;}
+/* footer */
+
+/* galaxy fold */
+@media (min-width: 280px) and (max-width:350px){
+/* navbar */
+nav .container{padding-right: .2rem;padding-left: .2rem;}  
+nav .container .row{margin-right: 0rem;}
+nav .container .row h1{font-size: 1.5rem;}  
+nav form button,nav form input {
+    font-size: .8rem !important;
+    height: 2.1rem !important;
+    margin-top: .9rem !important;
+}
+nav form button{margin-right: 0rem !important;width: 3.5rem !important;}
+nav form button i{display: none !important;}
+/* navbar */
+
+/* page content */
+.content{margin-top: 3rem;}
+.container .row img{width: 14rem;}
+.content .row .data h1{padding-bottom: 1.5rem !important;font-size: 1.6rem;}
+.container .row .data .buttons{display: block !important;margin-left: 2rem;margin-top: 1.2rem;}
+.container .row .data .buttons button{background-color: #db6400 !important;color: #ffffff;border-color: #db6400;}
+/* page content */
+}
+
+
+/* moto g4, galasy s5, iphone x, iphone 6/7/8, pixel 2, pixel 2xl, iphone 6/7/8 plus */
+@media(min-width:360px) and (max-width:425px){
+
+/* navbar */ 
+nav .container .row h1{font-size: 2rem;}  
+nav form button,nav form input {
+    font-size: 1rem !important;
+    height: 2.5rem !important;
+}
+nav form button{margin-right: 0rem !important;width: 4rem !important;}
+nav form button i{display: none !important;}
+/* navbar */
+
+/* page content */
+.content{margin-top: 3rem;}
+.container .row img {width: 90%;}
+.container .row .data .buttons{display: block !important;margin-left: 6.5rem;margin-top: 1.2rem;}
+.container .row .data .buttons button{background-color: #db6400 !important;color: #ffffff;border-color: #db6400;}
+/* page content */
+
+}
+
+/* surface Duo */
+@media (min-width:426px) and (max-width:540px){
+nav form button {
+    width: 9rem !important;
+    font-size: 1.1rem !important;
+    margin-right: 0rem !important;
+}
+
+/* page content */
+.content{margin-top: 3rem;}
+.container .row img {width: 90%;}
+.container .row .data .buttons{margin-left: 3.5rem;margin-top: 1.2rem;}
+.container .row .data .buttons button{
+    width: 100%;
+    background-color: #db6400 !important;
+    color: #ffffff;
+    border-color: #db6400;
+}
+/* page content */
+
+}
+
+/* Small Screen */
+@media(min-width:576px) and (max-width:767px){
+
+nav form button,nav form input {font-size: .9rem !important;height: 2.5rem !important;}
+nav .container .row h1{font-size: 1.8rem;}
+
+/* content */
+.container .row img{width: 60% ;margin-left: 5rem;}
+.container .row .data{padding-left: 1.5em;}
+.container .row .data h1{font-size: 1.5rem;padding-bottom: 2rem !important;}
+.container .row .data h5{font-size: 1rem;}
+.container .row .data .del button, .container .row .data .ord button{width: 7rem;}
+.container .row .data .sta{margin-left: -.9rem !important;}
+/* content */
+
+} 
+
+
+/*  Medium Screen */
+@media(min-width:768px) and (max-width:991px)
+{
+nav form button,nav form input {font-size: .9rem !important;height: 2.5rem !important;}
+nav .container .row h1{font-size: 2rem;}
+
+/* content */
+.container .row .data h1{font-size: 1.5rem;padding-bottom: 2rem !important;}
+.container .row .data h5{font-size: 1rem;}
+.container .row .data .buttons{margin-left: -18rem;margin-top: 1.5rem;}
+
+/* only for "hp monitor add , samsung smart phone add " pages */
+.container .row .data .btns{margin-top: 4rem;}
+/* only for "hp monitor add , samsung smart phone add " pages */
+
+/* only for headphone add page */
+.container .row .data .btn-block{display: block !important;margin-left: 0rem;}
+/* only for headphone add page */
+
+/* content */
+
+}
+
+/* large screen */
+@media(min-width: 992px) and (max-width:1199px)
+{
+.container .row .data .del button, .container .row .data .ord button{width: 7rem;}
+.container .row .data .buttons{margin-top: 1.5rem;}
+}
+ 
+/* laptop xl */
+@media (min-width:1600px) and (max-width:2560px){
+.icons .icon i {font-size: 2.5rem;}    
+/* navbar */
+nav form button, nav form input {font-size: 1.5rem !important;height: 4.2rem !important;}
+nav form button{width: 11rem !important;}
+nav .container .row h1{font-size: 4rem;}
+/* navbar */
+.container .row .data h6{font-size: 1.8rem;}
+.container .row .data h5{font-size: 1.5rem;}
+.container .row .data button{font-size: 1.5rem;width: 17rem;}
+}

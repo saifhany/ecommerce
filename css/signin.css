@@ -1,0 +1,165 @@
+/* this css design for:
+        "signin,create account, signin for admin, admin-create acount, order, payment, done,edit user, edit product" pages */
+body{margin: auto;background-color:#F8F9FA;}
+
+i{cursor: pointer;}
+
+h1,h2,h3,h5,p,i,a,text,button,input,label{font-family: 'Play', sans-serif;}
+::selection{background-color: rgba(0,0,0,.3);color: #ffffff;}
+
+/* navbar */
+.nav{background-color: #010a11}
+nav h1{
+    color: #a6a9b6;
+    padding-top: 1.1rem;
+    padding-bottom: 1rem;
+    text-transform: uppercase;
+    font-size: 2.5rem;}
+nav span{color: #db6400;}
+nav .sfa{
+    font-size: 1.2rem; 
+    color: #a6a9b6;
+    padding-top: 2rem;
+    padding-left: 13rem;
+    transition: .5s all;
+}
+nav .sfa:hover{color: #db6400;}
+/* navbar */
+
+/* content */
+
+/* just for "admin create account" page  */
+.content h6{color: #ced4da;}
+/* animate the hint */
+.animate__pulse {
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+    transition: ease-in-out;
+  }
+/*********************/
+
+.content .data input{
+    width: 22rem ;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    background: none;
+    margin-left: 5rem;
+}
+.content #check{margin-top: 5px;margin-right: .5rem;}  
+.content .send input{width: 15rem;transition: .5s ease;}
+.content .send input:hover{background-color: #db6400;color: #ffffff;}
+
+/* just for "edit User , payment , order" pages */
+.content h1{margin-left: -7rem;margin-bottom: 1.5rem;}
+/****************/
+
+/* just for "payment" page */
+.content .ch #check{margin-top: 5px;margin-right: .5rem;}
+/***************/
+/* content */
+
+
+/* footer for pages that have*/
+/* about Us */
+.aboutUs{background-color: #010a11;margin-top: 7rem;}
+.aboutUs h2, .aboutUs p{color: #a6a9b6;}
+/* about Us */
+
+footer i{color: #16697a;transition: .6s ease ;}
+footer i:hover{color: #db6400 ;}
+/* footer */
+
+/* galaxy fold */
+@media (min-width: 280px) and (max-width:350px){
+
+/* navbar */
+nav .container .row h1{font-size: 1.5rem;}  
+nav .sfa{padding-left: 0rem;font-size: 1rem;}
+/* navbar */
+
+/* page content */
+.content{padding-top: 1rem !important;}
+.content .send input{width:10rem;}
+.content .data input{width: 14rem;margin-left: 3rem;}
+.content .hint{padding-left: 1rem !important;}
+/* admin craete acount page */
+.content h6{font-size: .8rem;}
+/* admin craete acount page */
+
+/* order page */
+.content h1{margin-left: 0rem;}
+/* order page */
+
+/* page content */
+
+}
+
+/* moto g4, galasy s5, iphone x, iphone 6/7/8, pixel 2, pixel 2xl, iphone 6/7/8 plus */
+@media(min-width:360px) and (max-width:425px){
+
+/* navbar */
+nav .container .row h1{font-size: 2rem;}  
+nav .sfa{padding-left: .2rem;font-size: 1rem;}
+/* navbar */
+
+/* page content */
+.content{padding-top: 1rem !important;}
+.content .send input{width:10rem;background-color: #db6400;color: #ffffff;}
+.content .data input{width: 14rem;margin-left: 3rem;}
+.content .hint{padding-left: 1rem !important;}
+/* admin craete acount page */
+.content h6{font-size: 1rem;}
+/* admin craete acount page */
+
+/* order page */
+.content h1{margin-left: 0rem;}
+/* order page */
+
+/*page content */
+}
+
+/* surface Duo */
+@media (min-width:426px) and (max-width:540px){
+
+ /* for edit product page */
+.content h1 {margin-left: -1rem;}
+ /* for edit product page */
+
+nav .sfa{padding-left: 5rem;}
+.content .send input{background-color: #db6400;color: #ffffff;}
+}
+
+/* Small Screen */
+@media(min-width:768px) and (max-width:991px){
+
+nav .sfa {font-size: 1.1rem;padding-left: 4rem; }
+nav h1{font-size: 2.2rem;}
+
+/* just for "edit User , payment , order" pages */
+.content h1{margin-left: -5rem;}
+/****************/
+
+}
+
+/*  Medium Screen */
+@media(min-width:992px) and (max-width:1199px){
+
+nav .sfa {font-size: 1.1rem;padding-left: 5rem; }
+nav h1{font-size: 2.3rem;padding-left: 1rem;}
+
+}
+
+/* responsive for ipad, ipad pro,laptop l is ok */
+/* laptop l */
+@media(min-width:1441px) and (max-width:2560px){
+
+nav .sfa {font-size: 1.5rem;}
+nav h1{font-size: 4.5rem;}
+.content .data label,
+.content div:nth-of-type(3) label, 
+.content .hint{font-size: 1.8rem;}
+.content .data input{width: 32rem;font-size: 1.5rem;}
+.content #check {margin-top: 13px}
+.content .send input{width: 20rem;font-size: 1.7rem;}
+}

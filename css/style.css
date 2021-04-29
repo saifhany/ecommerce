@@ -1,0 +1,820 @@
+body{margin: auto;background-color:#F8F9FA;}
+
+i{cursor: pointer;}
+
+h1,h2,h3,h5,p,i,a,text,button,input,label{font-family: 'Play', sans-serif;}
+::selection{background-color: rgba(0,0,0,.3);color: white;}
+
+/* navbar */
+
+/* *********** */
+/* only for "best sellers, camera " pages */
+.nav{background-color: #010a11}
+.nav .container h1{
+    color: #a6a9b6;
+    padding-top: 1.1rem;
+    padding-bottom: 1rem;
+    text-transform: uppercase;
+    font-size: 2.5rem;}
+
+.nav .container span{color: #db6400;}
+.nav .container form input, .nav .container form button{height: 3rem !important;border: none !important;margin-top: 1.2rem !important;}
+.nav .container form input{border-top-right-radius: 0% !important; border-bottom-right-radius: 0% !important;}
+.nav .container form button{
+    width: 9rem !important;
+    border-top-left-radius: 0% !important;
+    border-bottom-left-radius: 0% !important;
+    background-color: #16697a !important;
+    color: #f7f6e7 !important;
+    font-size: 1.1rem !important;
+    transition: .6s ease !important;
+    margin-right: 1rem !important;}
+.nav .container form button:hover{background-color: #db6400 !important;color: #ffffff !important;}
+/* *********** */
+
+/* linkaaat */ 
+header nav .container-fluid .linkat a{font-size: 1.5rem;color: #16697a; margin-right: 2rem;}
+header nav .container-fluid .linkat .dropdown-menu a{font-size: 1.3rem;}
+header nav .container-fluid .linkat .dropdown-menu{
+    background-color: black !important;
+    margin-left: -4rem !important;
+    padding-right: 3rem;
+    padding-left: 1.1rem;
+    margin-top: 1.5rem !important;
+}
+header nav .container-fluid .linkat .dropdown-menu::before{
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    background-color:black;
+    top: -8px;
+    left: 197px;
+    transform: rotate(45deg);
+    z-index: -1;
+}
+header nav .container-fluid .linkat .dropdown-item{padding-left: 5px;}
+header nav .container-fluid .linkat .dropdown-item:hover{background: none;}
+
+
+header nav .container-fluid .linkat form input,
+header nav .container-fluid .linkat form button{height: 3rem !important;border: none !important;}
+header nav .container-fluid .linkat form input{
+    width: 14rem !important;
+    border-top-right-radius: 0% !important; 
+    border-bottom-right-radius: 0% !important;
+}
+header nav .container-fluid .linkat form button{
+    margin-top: 0%;
+    width: 6rem !important;
+    border-top-left-radius: 0% !important;
+    border-bottom-left-radius: 0% !important;
+    background-color: #16697a !important;
+    color: #f7f6e7 !important;
+    font-size: 1rem !important;
+    transition: .6s ease !important;}
+header nav .container-fluid .linkat form button:hover{background-color: #db6400 !important;color: #ffffff !important;}
+
+/* menu button */
+header nav .container-fluid .menuBtn{color: #db6400;line-height: 80px;}
+
+
+/* animate the underline */
+header nav .container-fluid .linkat a{
+    transition: .4s ease-in-out;
+    position: relative;}
+
+header nav .container-fluid .linkat a:hover{color: #db6400;}
+header nav .container-fluid .linkat a::after{
+    content: "";
+    background: #db6400;
+    position: absolute;
+    width: 100%;
+    height: 0.1rem;
+    left: 0;
+    bottom: 0;
+    padding-left: .5rem;
+    transform:scale(0,1);
+    transform-origin: 0% 100%;
+    transition:transform 1s ease;}
+
+header nav .container-fluid .linkat a:hover::after{transform: scale(1,1);} 
+
+header nav .container-fluid .linkat .active{color: #db6400;}
+header nav .container-fluid .linkat .active::after{transform:scale(1,1);}
+/* animate the underline */
+/* navbar */
+
+/* help icons*/
+.icons .icon {
+    direction: rtl;
+    top: 10rem;
+    background-color:#ffffff;
+    font-size: 1.6rem !important;
+    z-index: 9999;
+}
+.icons .icon i{transition: .5s ease-in-out;color: #16697a;font-size: 1.5rem;}
+.icons .icon i:hover{color: #db6400;} 
+/* help icons*/
+
+/* header */
+header{
+    height: 660px;
+    background-image: url("../images/10.jpg");
+    background-position: center;
+    background-size: cover;}
+
+header .data h1{
+    margin-top: 13.2rem;
+    font-size: 7.6rem;
+    text-transform: uppercase;
+    color: #010a11;}
+header .data h1 span{color: #db6400;}
+header .data h5 {color: #a6a9b6;padding-top: .3rem;}
+
+header button{
+    color: #a6a9b6 !important;
+    margin-top: 2rem;
+    background: none !important;
+    font-size: 2rem !important;
+    width: 14rem !important;
+    transition: .5s ease-in-out !important;}
+
+header button:hover{color: #ffffff !important;background-color: #db6400 !important;border-color: #db6400;}
+/* header */
+
+/* content */
+.content .row{padding-left: 5em !important;}
+.content{margin-top: 6rem;}
+.content .card .card-body a h5, .content .card .card-body p{color: #01233f;transition: .5s ease;}
+.content .card .card-body a h5:hover{color: #db6400;}
+.content .card{border: none;width: 24em;margin-top: 5em;margin-right: 5.4em;transition: .5s ease ;}
+.content .card:hover{box-shadow: 0 .5rem 2rem rgba(0,0,0,.3)!important;}
+.content .card img{width: 100%;height: 200px;}
+.content .card .card-text{position: relative;}/* for star rate */
+
+.content .card button{transition: .6s ease;}
+.content .card button:hover{background-color: #db6400 !important;color: #ffffff !important;}
+
+.content .card .card-text input{display: none;}
+.content .card .card-text label{display: inline-block;direction: rtl;}
+
+/* star rate */
+.content .card .card-text .rate1 label::before{
+    position: relative;
+    display: inline-block;
+    color: #01233f;
+    transition: .5s ease;
+}
+.content .card .card-text label:hover:before,
+.content .card .card-text input:checked~label::before
+{
+    font-weight: bold;
+    color: #1761a0;
+}
+/* star rate */
+
+/* pagination */
+.pgn{padding-top: 7rem;}
+.pgn .page-item .page-link{border: none;transition: .5s ease;}
+.pgn .active a{color: #ffffff !important;background:#db6400 !important;}
+.pgn .disabled a{color: gray !important;}
+.pgn a{color: #db6400 !important;}
+.pgn .page-item .page-link:hover{background-color: #db6400 ; color: #ffffff !important;}
+/* pagination */
+
+/* footer */
+
+/* about Us */
+.aboutUs{background-color: #010a11;margin-top: 7rem;}
+.aboutUs h2, .aboutUs p{color: #a6a9b6;}
+/* about Us */
+
+footer i{color: #16697a;transition: .6s ease ;}
+footer i:hover{color: #db6400 ;}
+/* footer */
+
+/* galaxy fold */
+@media (min-width: 280px) and (max-width:319px){
+
+/* header */
+header .data h1{font-size: 2.1rem;margin-top: 7.2rem;}
+header .data h5{font-size: 1rem;}
+header button{
+    width: 8rem !important;
+    font-size: 1rem !important;
+    margin-top: .5rem ;}
+header .data h5{display: none !important;}
+/* header */
+
+/* pagination_3 */
+/* navbar */
+nav .container{padding-right: .2rem;padding-left: .2rem;}  
+nav .container .row h1{font-size: 1.5rem;}  
+.nav .container form button,.nav .container form input {
+    font-size: .8rem !important;
+    height: 2.1rem !important;
+    margin-top: .9rem !important;
+}
+.nav .container form button{margin-right: 0rem !important;width: 3.5rem !important;}
+nav form button i{display: none !important;}
+/* navbar */
+/* pagination */
+
+/* page content */
+.content{margin-top: 2rem;}
+.content .row{
+    padding-left: 0rem !important;
+}
+.content .card{
+    margin-right:0rem !important;
+    margin-top: 3rem;
+    margin-left: 2.2rem;
+    width: 13rem ;
+}
+.content .card .card-body{padding: .5rem 0rem;}
+.content .card .card-body h5{padding-top: 0rem !important; padding-bottom: 0rem !important;}
+.content .card .card-body .card-text{margin-bottom: 0;}
+.content .card img{height: 135px;}
+.content .card button{background-color: #db6400;color: #ffffff;}
+/* page content */
+
+/* pagination */
+.pgn {padding-top: 5rem;}
+.pgn .page-item .page-link {font-size: 1rem}
+.pagination-lg .page-link {
+    padding: .5rem .5rem;}
+/* pagination */
+
+}
+
+/* iphone 5/se */
+@media (min-width: 320px) and (max-width:349px){
+/* header */
+header .data h1{font-size: 2.1rem;margin-top: 7.2rem;}
+header .data h5{font-size: 1rem;}
+header button{
+    width: 8rem !important;
+    font-size: 1rem !important;
+    margin-top: .5rem ;}
+header .data h5{display: none !important;}
+/* header */
+
+/* pagination_3 */
+/* navbar */
+nav .container{padding-right: .2rem;padding-left: .2rem;}  
+nav .container .row{margin-right: 0rem;}
+nav .container .row h1{font-size: 1.8rem;}  
+.nav .container form button,.nav .container form input {
+    font-size: .8rem !important;
+    height: 2.2rem !important;
+    margin-top: 1rem !important;
+}
+.nav .container form button{margin-right: 0rem !important;width: 3.5rem !important;}
+nav form button i{display: none !important;}
+/* navbar */    
+/* pagination */
+
+
+/* page content */
+.content{margin-top: 2rem;}
+.content .row{
+    padding-left: 0rem !important;
+}
+.content .card{
+    margin-right:0rem !important;
+    margin-top: 3rem;
+    margin-left: 1.2rem;
+    width: 8.5rem ;
+}
+.content .card .card-body{padding: .5rem 0rem;}
+.content .card .card-body h5{padding-top: 0rem !important; padding-bottom: 0rem !important;font-size: 1.2rem;}
+.content .card .card-body .card-text{margin-bottom: 0;}
+.content .card:nth-of-type(2) .card-body a h5{padding-bottom: 1.4rem !important;}
+.content .card:nth-of-type(3) .card-body a h5{padding-bottom: 5.7rem !important;}
+.content .card img{height: 95px;}
+.content .card button{background-color: #db6400;color: #ffffff;}
+/* page content */
+
+/* pagination */
+.pgn {padding-top: 5rem;}
+.pgn .page-item .page-link {font-size: 1.2rem}
+.pagination-lg .page-link {
+    padding: .5rem .5rem;}
+/* pagination */
+
+
+}
+
+/* moto g4, galasy s5, iphone x, iphone 6/7/8 */
+@media(min-width:350px) and (max-width:410px){
+/* header */
+header .data h1{font-size: 2.1rem;margin-top: 7.2rem;}
+header .data h5{font-size: 1rem;}
+header button{
+    width: 8rem !important;
+    font-size: 1rem !important;
+    margin-top: .5rem ;}
+header .data h5{display: none !important;}
+/* header */
+
+/* pagination_3 */
+/* navbar */
+nav .container{padding-right: .2rem;padding-left: .2rem;}  
+nav .container .row{margin-right: 0rem;}
+nav .container .row h1{font-size: 1.8rem;}  
+.nav .container form button,.nav .container form input {
+    font-size: .8rem !important;
+    height: 2.2rem !important;
+    margin-top: 1rem !important;
+}
+.nav .container form button{margin-right: 0rem !important;width: 3.5rem !important;}
+nav form button i{display: none !important;}
+/* navbar */    
+/* pagination */
+
+
+/* page content */
+.content{margin-top: 2rem;}
+.content .row{
+    padding-left: 0rem !important;
+}
+.content .card{
+    margin-right:0rem !important;
+    margin-top: 3rem;
+    margin-left: 1.2rem;
+    width: 9rem ;
+}
+.content .card .card-body{padding: .5rem 0rem;}
+.content .card .card-body h5{padding-top: 0rem !important; padding-bottom: 0rem !important;font-size: 1.2rem;}
+.content .card .card-body .card-text{margin-bottom: 0;}
+.content .card:nth-of-type(2) .card-body a h5{padding-bottom: 1.4rem !important;}
+.content .card:nth-of-type(3) .card-body a h5{padding-bottom: 4.1rem !important;}
+.content .card img{height: 115px;}
+.content .card button{background-color: #db6400;color: #ffffff;}
+/* page content */
+
+/* pagination */
+.pgn {padding-top: 5rem;}
+.pgn .page-item .page-link {font-size: 1.2rem}
+.pagination-lg .page-link {
+    padding: .5rem .5rem;}
+/* pagination */
+
+}
+
+
+/* pixel 2, pixel 2xl, iphone 6/7/8 plus */
+@media(min-width:411px) and (max-width:539px){
+
+/* header */
+header .data h1{font-size: 2.5rem;margin-top: 7.2rem;}
+header .data h5{font-size: 1rem;}
+header button{
+    width: 8rem !important;
+    font-size: 1rem !important;
+    margin-top: .5rem ;}
+header .data h5{display: none !important;}
+/* header */
+
+/* pagination_3 */
+/* navbar */
+nav .container{padding-right: .2rem;padding-left: .2rem;}  
+nav .container .row{margin-right: 0rem;}
+nav .container .row h1{font-size: 1.8rem;}  
+.nav .container form button,.nav .container form input {
+    font-size: .8rem !important;
+    height: 2.2rem !important;
+    margin-top: .9rem !important;
+}
+.nav .container form button{margin-right: 0rem !important;width: 3.5rem !important;}
+nav form button i{display: none !important;}
+/* navbar */    
+/* pagination */
+
+/* camera page */
+.xcam .card:nth-of-type(2) .card-body a h5{padding-bottom: 1.4rem !important;}
+/* camera page */
+
+/* page content */
+.content{margin-top: 2rem;}
+.content .row{
+    padding-left: 0rem !important;
+}
+.content .card{
+    margin-right:0rem !important;
+    margin-top: 3rem;
+    margin-left: 1.5rem;
+    width: 10.5rem ;
+}
+.content .card .card-body{padding: .5rem 0rem;}
+.content .card .card-body h5{padding-top: 0rem !important; padding-bottom: 0rem !important;font-size: 1.3rem;}
+.content .card .card-body .card-text{margin-bottom: 0;}
+.content .card:nth-of-type(3) .card-body a h5{padding-bottom: 2.8rem !important;}
+.content .card img{height: 120px;}
+.content .card button{background-color: #db6400;color: #ffffff;}
+/* page content */
+
+/* pagination */
+.pgn {padding-top: 5rem;}
+.pgn .page-item .page-link {font-size: 1.5rem}
+.pagination-lg .page-link {
+    padding: .5rem 1rem;}
+/* pagination */
+}
+
+/* surface duo */
+@media(min-width:539px) and (max-width:540px){
+
+/* header */
+header{height: 310px !important;}
+header .data h1{font-size: 3.2rem;margin-top: 10.2rem;}
+header .data h5{font-size: 1rem;}
+header button{
+    width: 9rem !important;
+    font-size: 1.5rem !important;
+    margin-top: .5rem ;}
+header .data h5{display: none !important;}
+/* header */
+
+/* pagination_3,camera pages */
+.nav .container form button{margin-right: 0rem !important;} 
+/* pagination */
+
+/* page content */
+.content{margin-top: 2rem;}
+.content .row{
+    padding-left: 0rem !important;
+}
+.content .card{
+    margin-right:0rem !important;
+    margin-top: 3rem;
+    margin-left: 2rem;
+    width: 14rem ;
+}
+.content .card .card-body{padding: .5rem 0rem;}
+.content .card .card-body h5{padding-top: 0rem !important; padding-bottom: 0rem !important;font-size: 1.3rem;}
+.content .card .card-body .card-text{margin-bottom: 0;}
+.content .card:nth-of-type(3) .card-body a h5{padding-bottom: 2.7rem !important;}
+.content .card img{height: 135px;}
+.content .card button{background-color: #db6400;color: #ffffff;}
+/* page content */
+
+/* pagination */
+.pgn {padding-top: 5rem;}
+.pgn .page-item .page-link {font-size: 1.5rem}
+.pagination-lg .page-link {padding: .5rem 1rem;}
+/* pagination */
+}
+
+/* extra small screen */
+@media(max-width:575px){
+
+/* help icons */
+.icons .icon {top: 6rem;}
+
+header{height: 250px;}
+/* for menu */
+header nav .container-fluid .menuBtn{display: flex !important;}
+header nav .container-fluid .linkat form{display: none !important;}
+header nav .container-fluid .linkat{
+    left: -100%;
+    position: absolute;
+    margin-left: -1rem;
+    justify-content: flex-start !important;
+    padding-top: 1rem !important;
+    width: 18rem;
+    height: 250px;
+    transition: .9s ease;
+    z-index: 1;
+    background-color: rgba(0,0,0,.7);
+}
+
+header nav .container-fluid .linkat a {
+    font-size: 1.2rem;
+    padding-top: .8rem;
+    float: left !important;}
+header nav .container-fluid .linkat ul li{display: block !important;margin-left: 1.5rem;}
+
+#check:checked~.linkat{left: 0;}
+/* for menu */
+
+/* dropdown link */
+header nav .container-fluid .linkat .dropdown-menu a{font-size: 1.2rem;padding-top: .2rem;padding-left: 0px;}
+header nav .container-fluid .linkat .dropdown-menu{
+    background-color: rgba(0,0,0,.7) !important;
+    margin-left: 6rem !important;
+    padding-right: 1rem;
+    padding-left: 0rem;
+    margin-top: 0rem !important;
+}
+header nav .container-fluid .linkat .dropdown-menu::before{content: none;}
+header nav .container-fluid .linkat .dropdown-item{padding-left: 0px;}
+/* dropdown link */
+
+/* header */
+
+}
+
+/* Small Screen */
+@media(min-width:576px) and (max-width:767px){
+
+/* help icons */
+.icons .icon {top: 6rem;}
+
+/* *********** */
+/* only for "best sellers, camera " pages */
+.navbar form button, .navbar form input {font-size: .9rem !important;height: 2.5rem !important;}
+.navbar .container .row h1{font-size: 1.8rem;}
+/* ********** */
+
+/* header */
+header{height: 250px;}
+header .data h1{font-size: 2.2rem;margin-top: 6.2rem;}
+header .data h5{font-size: 1rem;}
+header button{
+    width: 8rem !important;
+    font-size: 1rem !important;
+    margin-top: .5rem ;}
+
+/* for menu */
+header nav .container-fluid .menuBtn{display: flex !important;}
+header nav .container-fluid .linkat form{display: none !important;}
+header nav .container-fluid .linkat{
+    left: -100%;
+    position: absolute;
+    margin-left: -1rem;
+    justify-content: flex-start !important;
+    padding-top: 1rem !important;
+    width: 18rem;
+    height: 250px;
+    transition: .9s ease;
+    z-index: 1;
+    background-color: rgba(0,0,0,.7);
+}
+
+header nav .container-fluid .linkat a {
+    font-size: 1.2rem;
+    padding-top: .8rem;
+    float: left !important;}
+header nav .container-fluid .linkat ul li{display: block !important;margin-left: 1.5rem;}
+
+#check:checked~.linkat{left: 0;}
+/* for menu */
+
+/* dropdown link */
+header nav .container-fluid .linkat .dropdown-menu a{font-size: 1.2rem;padding-top: .2rem;padding-left: 0px;}
+header nav .container-fluid .linkat .dropdown-menu{
+    background-color: rgba(0,0,0,.7) !important;
+    margin-left: 6rem !important;
+    padding-right: 1rem;
+    padding-left: 0rem;
+    margin-top: 0rem !important;
+}
+header nav .container-fluid .linkat .dropdown-menu::before{content: none;}
+header nav .container-fluid .linkat .dropdown-item{padding-left: 0px;}
+/* dropdown link */
+
+/* header */
+
+/* page content */
+.content {margin-top: 3rem;}
+.content .row {padding-left: 1.5em !important;}
+.content .card {
+    width: 11em!important;
+    margin-top: 1.7em;
+    margin-right: 2em;
+}
+.content .card .card-body{padding: .5rem 0rem;}
+.content .card img {height: 8rem;padding-top: 5px;}
+.content .card h5 {font-size: 1rem;padding-top: 0px !important;}
+
+.content .card:nth-of-type(2) h5,
+.content .card:nth-of-type(2) .card-title{padding-bottom: 1rem !important;}
+
+.content .card:nth-of-type(3) h5,
+.content .card:nth-of-type(3) .card-title{padding-bottom: .6rem !important;}
+
+.content .card:nth-of-type(4) h5,
+.content .card:nth-of-type(4) .card-title{padding-bottom: .2rem !important;}
+
+.content .card:nth-of-type(3){margin-left: 0rem ;}
+
+.content .card:nth-of-type(3){margin-left: 0rem ;}
+
+.content .card p{margin-bottom: 5px;font-size: .8rem;}
+.content .card .fs-4{font-size: 1rem !important;}
+.content .card .form-control {font-size: .9rem;}
+.content .card button{background-color: #db6400;color: #ffffff;}
+
+/* pagination */
+.pgn {padding-top: 5rem;}
+.pgn .page-item .page-link {font-size: 1.1rem}
+/* pagination */
+
+/* footer */
+.aboutUs {margin-top: 5rem;}
+
+}
+
+/*  Medium Screen ipad */
+@media(min-width:768px) and (max-width:991px){
+
+/* *********** */
+/* only for "best sellers, camera " pages */
+.navbar form button, .navbar form input {font-size: .9rem !important;height: 2.5rem !important;}
+.navbar .container .row h1{font-size: 2rem;}
+/* ********** */
+
+/* header */
+header{height: 250px;}
+header .data h1{font-size: 2.4rem;margin-top: 6.2rem;}
+header .data h5{font-size: 1rem;}
+header button{
+    width: 8rem !important;
+    font-size: 1rem !important;
+    margin-top: .5rem ;}
+
+/* for menu */
+header nav .container-fluid .menuBtn{display: flex !important;}
+header nav .container-fluid .linkat form{display: none !important;}
+header nav .container-fluid .linkat{
+    left: -100%;
+    position: absolute;
+    margin-left: -1rem;
+    justify-content: flex-start !important;
+    padding-top: 1rem !important;
+    width: 18rem;
+    height: 250px;
+    transition: .9s ease;
+    z-index: 1;
+    background-color: rgba(0,0,0,.7);
+}
+
+header nav .container-fluid .linkat a {
+    font-size: 1.3rem;
+    padding-top: .8rem;
+    float: left !important;}
+header nav .container-fluid .linkat ul li{display: block !important;margin-left: 1.5rem;}
+
+#check:checked~.linkat{left: 0;}
+/* for menu */
+
+/* dropdown link */
+header nav .container-fluid .linkat .dropdown-menu a{font-size: 1.2rem;padding-top: .2rem;padding-left: 0px;}
+header nav .container-fluid .linkat .dropdown-menu{
+    background-color: rgba(0,0,0,.7) !important;
+    margin-left: 6rem !important;
+    padding-right: 1rem;
+    padding-left: 0rem;
+    margin-top: 0rem !important;
+}
+header nav .container-fluid .linkat .dropdown-menu::before{content: none;}
+header nav .container-fluid .linkat .dropdown-item{padding-left: 0px;}
+/* dropdown link */
+
+/* header */
+
+/* page content */
+.content {margin-top: 3rem;}
+.content .row {padding-left: 1.5em !important;}
+.content .card {
+    width: 13rem !important;
+    margin-top: 2rem;
+    margin-right: 2.5rem;
+}
+.content .card .card-body{padding: 1rem .5rem;}
+.content .card img {height: 9rem;padding-top: 5px;}
+.content .card h5 {font-size: 1rem;padding-top: 0px !important;}
+
+.content .card:nth-of-type(3) h5,
+.content .card:nth-of-type(3) .card-title{padding-bottom: 2.3rem !important;}
+
+.content .card:nth-of-type(4) h5,
+.content .card:nth-of-type(4) .card-title{padding-bottom: .2rem !important;}
+
+.content .card:nth-of-type(3){margin-right: 1rem;}
+
+.content .card:nth-of-type(6){margin-right: 1rem;}
+
+.content .card p{margin-bottom: 5px;font-size: .8rem;}
+.content .card .fs-4{font-size: 1rem !important;}
+.content .card .form-control {font-size: .9rem;}
+
+/* pagination */
+.pgn {padding-top: 5rem;}
+.pgn .page-item .page-link {font-size: 1.2rem}
+/* pagination */
+
+/* footer */
+.aboutUs {margin-top: 5rem;}
+
+}
+
+/* large screen "ipad pro,laptop" */
+@media (min-width:992px) and (max-width:1200px){
+
+/* header */
+header{height: 350px;}
+header .data h1{font-size: 2.8rem;margin-top: 6.2rem;}
+header .data h5{font-size: 1rem;}
+header button{
+    width: 9rem !important;
+    font-size: 1.2rem !important;
+    margin-top: .5rem ;}
+/* header */
+
+/* page content */
+.content {margin-top: 3rem;}
+.content .row {padding-left: 3rem !important;}
+.content .card {
+    width: 17rem !important;
+    margin-top: 2rem;
+    margin-right: 4rem;
+}
+.content .card img {height: 12rem;padding-top: 5px;}
+
+.content .card:nth-of-type(3) h5,
+.content .card:nth-of-type(3) .card-title{padding-bottom: 2.7rem !important;}
+
+.content .card:nth-of-type(4) h5,
+.content .card:nth-of-type(4) .card-title{margin-bottom: -1rem !important;}
+
+.content .card:nth-of-type(3),
+.content .card:nth-of-type(6){margin-right: 1rem;}
+
+.content .card .form-control {font-size: .9rem;}
+
+/* pagination */
+.pgn {padding-top: 5rem;}
+.pgn .page-item .page-link {font-size: 1.4rem}
+/* pagination */
+
+/* footer */
+.aboutUs {margin-top: 5rem;}
+} 
+
+/* laptop l */
+@media (min-width:1201px) and (max-width:1440px){
+
+/* header */
+header{height: 450px;}
+header .data h1{font-size: 5rem;margin-top: 7.2rem;}
+header .data h5{font-size: 1.2rem;}
+header button{
+    width: 12rem !important;
+    margin-top: 1.5rem ;}
+/* header */
+
+/* page content */
+.content {margin-top: 3rem;}
+.content .row {padding-left: 3rem !important;}
+.content .card {
+    width: 22rem !important;
+    margin-top: 6rem;
+    margin-right: 6rem;
+}
+.content .card img {height: 13rem;padding-top: 5px;}
+
+.content .card:nth-of-type(1) h5,
+.content .card:nth-of-type(2) h5{padding-bottom: 2.6rem !important;}
+.content .card:nth-of-type(3) h5,
+.content .card:nth-of-type(3) .card-title{padding-bottom: 2.6rem !important;}
+.content .card:nth-of-type(3),
+.content .card:nth-of-type(6){margin-right: 1rem;}
+}
+
+/* laptop xl */
+@media (min-width:1600px) and (max-width:2560px){
+/* navbar for pagination_3*/
+.nav .container form input, .nav .container form button{font-size: 1.5rem !important;height: 4rem !important;}
+.nav .container form button{width: 11rem !important;}
+nav .row h1{font-size: 4rem !important;}
+/* navbar */
+
+.icons .icon i {font-size: 2.5rem;}    
+
+/* header */
+header{height: 500px;}
+header .data h1{font-size: 6rem;margin-top: 8.2rem;}
+header .data h5{font-size: 1.2rem;}
+/* header */
+
+/* page content */
+.content {margin-top: 3rem;}
+.content .row {padding-left: 3rem !important;}
+.content .card {
+    width: 25rem !important;
+    margin-top: 6rem;
+    margin-right: 7rem;
+}
+.content .card img {height: 20rem;padding-top: 5px;}
+.content .card button{font-size: 1.5rem;}
+.content .card:nth-of-type(1) h5,
+.content .card:nth-of-type(2) h5{padding-bottom: 2.6rem !important;}
+.content .card:nth-of-type(3) h5,
+.content .card:nth-of-type(3) .card-title{padding-bottom: 2.6rem !important;}
+.content .card:nth-of-type(5){margin-right: 1rem;}
+/* pagination */
+.pgn .page-item .page-link {font-size: 2.5rem}
+}

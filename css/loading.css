@@ -1,0 +1,22 @@
+body{margin: auto;background-color:#010a11;height: 12vh;}
+::selection{background-color: rgba(0,0,0,.3);color: white;}
+
+section{
+    margin-top: 20rem;}
+section div{
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    background-color:#db6400;
+    transition: 1s all;
+}
+section .first{animation: loading .4s ease  0s infinite alternate;}
+section .second{animation: loading .5s ease  1s infinite alternate;}
+section .third{animation: loading .6s ease  4s infinite alternate;}
+section .fourth{animation: loading .7s ease  7s infinite alternate;}
+
+
+@keyframes loading {
+    from{margin-top: 1rem;}
+    to{margin-top: 0rem;}
+} 

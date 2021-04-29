@@ -1,0 +1,261 @@
+/* this page for "deliver, contact" pages */
+body{margin: auto;background-color:#F8F9FA;}
+
+i{cursor: pointer;}
+
+h1,h2,h3,h6,p,i,a,text,button,input,label{font-family: 'Play', sans-serif;}
+::selection{background-color: rgba(0,0,0,.3);color: #ffffff;}
+
+nav{background-color: #010a11}
+nav h1{
+    color: #a6a9b6;
+    padding-top: 1.1rem;
+    padding-bottom: 1rem;
+    text-transform: uppercase;
+    font-size: 2.5rem;}
+nav span{color: #db6400;}
+
+/* content */
+.data p{margin-left: 8rem;}
+.data aside .pD{border-left:1px solid #a6a9b6;}
+
+.data .proData div h3{padding-top: 1rem;}
+.data .proData div p{width: 50%;padding-bottom: 1rem;padding-top: .5rem;}
+
+.data .proData div p,
+.data aside .pD div p{border-bottom:1px solid #cacbd0;padding-bottom: .2rem;}
+
+.data aside .pD div:nth-of-type(4) p{border-bottom:1px solid #010a11;}
+
+.data aside .pD div h6{padding-top: .5rem; padding-left: 1rem;}
+.data aside .pD div p{width: 55%;}
+/* content */
+
+/* ************** */
+/* for contact page only */
+section textarea{
+    width: 40rem !important;
+    height: 15rem !important;
+    border:none !important;
+    background-color: rgba(0, 0, 0, 0.1) !important;
+    color: rgba(0, 0, 0, 0.5) !important;
+}
+section input{
+    margin-left: 31rem;
+    width: 9rem !important;
+    height: 2.2rem !important;
+    background:none !important;
+    transition: .6s ease !important;
+}
+section input:hover{background-color: #db6400 !important;color: #ffffff !important;}
+/* for contact page only */
+/* ************** */
+
+/* about Us */
+.aboutUs{background-color: #010a11;margin-top: 7rem;}
+.aboutUs h2, .aboutUs p, .aboutUs textarea{color: #a6a9b6;}
+.aboutUs textarea{background-color:rgba(0, 0, 0, 0.3);border: none;}
+.aboutUs button{
+    background:none;
+    color: #a6a9b6;
+    border: 1px solid #a6a9b6;
+    border-radius: .4em;
+    font-size: 1.6rem;
+    transition: .6s ease ;}
+.aboutUs button:hover{background-color: #db6400;color: #ffffff;border: 1px solid #db6400;}
+.aboutUs i:hover button{color: #ffffff;}
+/* about Us */
+
+/* footer */
+footer i{color: #16697a;transition: .6s ease ;}
+footer i:hover{color: #db6400 ;}
+/* footer */
+
+/* galaxy fold */
+@media (min-width: 280px) and (max-width:350px){
+    
+nav h1{font-size: 1.6rem;}
+/* content */
+.data{padding-top: 0rem !important;}
+.data p{margin-left: 2rem;}
+.data .proData{padding-left: 0rem;}
+.data .proData div p{width: 80%;padding-bottom: 0rem;padding-top: .2rem;}
+.data .proData div h3 {font-size: 1.2rem;}
+.data aside{padding-left: .2rem;}
+.data aside .pD div h6{padding-left: .2rem;}
+.data aside .pD {padding-left: .1rem !important;}
+.data aside .pD div p{width: 80%;}
+/* content */
+
+/* ************** */
+/* for contact page only */
+section textarea{
+    width:100% !important;
+}
+section input{
+    width: 5rem !important;
+    margin-left: 11rem;
+    margin-bottom: 2rem;
+    background-color: #db6400 !important;
+    color: #ffffff !important;
+}
+/* for contact page only */
+/* ************** */
+}
+
+/* moto g4, galasy s5, iphone x, iphone 6/7/8, pixel 2, pixel 2xl, iphone 6/7/8 plus */
+@media(min-width:360px) and (max-width:425px){
+
+nav h1{font-size: 2rem;}
+/* content */
+.data{padding-top: 0rem !important;}
+.data p{margin-left: 2rem;}
+.data .proData{padding-left: 0rem;}
+.data .proData div p{width: 80%;padding-bottom: 0rem;padding-top: .2rem;}
+.data .proData div h3 {font-size: 1.3rem;}
+.data aside{padding-left: .2rem;}
+.data aside .pD {padding-left: .1rem !important;}
+.data aside .pD div p{width: 80%;}
+/* content */
+
+/* ************** */
+/* for contact page only */
+section textarea{
+    width:100% !important;
+}
+section input{
+    width: 6rem !important;
+    margin-left: 15rem;
+    margin-bottom: 2rem;
+    background-color: #db6400 !important;
+    color: #ffffff !important;
+}
+/* for contact page only */
+/* ************** */
+}
+
+/* surface Duo */
+@media (min-width:426px) and (max-width:540px){
+
+/* content */
+.data{padding-top: 0rem !important;}
+.data p{margin-left: 2rem;}
+.data .proData div p{padding-bottom: 0rem;padding-top: .2rem;}
+.data .proData div h3 {font-size: 1.3rem;}
+.data .proData div p,
+.data aside .pD div p{width: 80%;}
+/* content */
+
+/* ************** */
+/* for contact page only */
+section textarea{
+    width:100% !important;
+}
+section input{
+    width: 8rem !important;
+    margin-left: 24rem;
+    margin-bottom: 2rem;
+    background-color: #db6400 !important;
+    color: #ffffff !important;
+}
+/* for contact page only */
+/* ************** */
+
+}
+/* Small Screen */
+@media(min-width:576px) and (max-width:767px){
+
+nav h1{font-size: 1.8rem;}
+
+/* content */
+.data p{margin-left: 2.5rem;}
+.data .proData div p{width: 85%;padding-bottom: 1rem;padding-top: .2rem;}
+.data .proData div h3 {font-size: 1.4rem;}
+.data aside .pD {padding-left: .1rem !important;}
+.data aside .pD div p{width: 80%;}
+/* content */
+
+/* ************** */
+/* for contact page only */
+section textarea{
+    width: 22rem !important;
+    height: 12rem !important;
+}
+section input{
+    margin-left: 13rem;
+    background-color: #db6400 !important;
+    color: #ffffff !important;
+}
+/* for contact page only */
+/* ************** */
+
+}
+
+/*  Medium Screen */
+@media(min-width:768px) and (max-width:991px){
+
+nav h1{font-size: 2rem;}
+
+/* content */
+.data p{margin-left: 3rem;}
+.data .proData div p{width: 85%;padding-bottom: 1rem;padding-top: .2rem;}
+.data .proData div h3 {font-size: 1.6rem;}
+.data aside .pD {padding-left: .2rem !important;}
+.data aside .pD div p{width: 80%;}
+/* content */
+
+/* ************** */
+/* for contact page only */
+section textarea{
+    width: 29rem !important;
+    height: 12rem !important;
+}
+section input{margin-left: 20rem;}
+/* for contact page only */
+/* ************** */
+
+}
+
+/* large screen */
+@media (min-width:992px) and (max-width:1200px){
+
+/* ************** */
+/* for contact page only */
+section textarea{width: 38rem !important;}
+section input{margin-left: 29rem;}
+/* for contact page only */
+/* ************** */
+}
+  
+/* responsive for ipad, ipad pro,laptop l is ok */
+/* laptop l */
+@media(min-width:1441px) and (max-width:2560px){
+
+
+nav h1{font-size: 4.5rem;}
+
+/* content */
+.data .proData div h3 {font-size: 2.5rem;}
+.data aside .pD div h6{font-size: 2rem;}
+.data .proData div p, .data aside .pD div p{font-size: 2rem;}
+.data .pD div a{font-size: 1.5rem;}
+/* content */
+
+/* ************** */
+/* for contact page only */
+section textarea{
+    font-size: 1.3rem !important;
+    width: 100% !important;
+    height: 20rem !important;
+}
+section input{
+    margin-left: 39rem;
+    font-size: 1.5rem !important;
+    height: 3.5rem !important;
+    width: 15rem !important;}
+aside {font-size: 1.5rem;}
+/* for contact page only */
+/* ************** */
+
+
+}

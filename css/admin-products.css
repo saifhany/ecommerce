@@ -1,0 +1,169 @@
+/* this styling for "admin-products, admin-users, admin-orders" pages */
+body{margin: auto;background-color:#F8F9FA;}
+
+i{cursor: pointer;}
+
+h1,h2,h3,h5,p,i,a,text,button,input,label{font-family: 'Play', sans-serif;}
+::selection{background-color: rgba(0,0,0,.3);color: #ffffff;}
+
+/* navbar */
+nav{background-color: #010a11}
+nav h1{
+    color: #a6a9b6;
+    padding-top: 1.1rem;
+    padding-bottom: 1rem;
+    text-transform: uppercase;
+    font-size: 2.5rem;}
+nav span{color: #db6400;}
+nav .sfa{font-size: 1.2rem; color: #a6a9b6;padding-top: 2rem;padding-left: 13rem;}
+nav .sfa:hover{color: #db6400;}
+
+nav form input, nav form button{height: 3rem !important;border: none !important;margin-top: 1.2rem !important;}
+nav form input{border-top-right-radius: 0% !important; border-bottom-right-radius: 0% !important;}
+nav form button{
+    width: 9rem !important;
+    border-top-left-radius: 0% !important;
+    border-bottom-left-radius: 0% !important;
+    background-color: #16697a !important;
+    color: #f7f6e7 !important;
+    font-size: 1.1rem !important;
+    transition: .6s ease !important;
+    margin-right: 1rem !important;}
+nav form button:hover{background-color: #db6400 !important;color: #ffffff !important;}
+/* navbar */
+
+/* page content */
+.data{margin-top: 1.5rem;}
+
+.data table thead{
+    font-size: 1.3rem;
+    background-color: #e6e7ea;
+    color: gray;
+}
+.data table thead td{
+    border-right: 2px solid #F8F9FA;
+    margin-bottom: .5rem;
+}
+.data table thead .edit{background-color: #F8F9FA;}
+.data table thead td,
+.data table tbody td{
+    width: 12rem;
+    padding: 1rem;
+}
+/* page content */
+
+/* galaxy fold */
+@media (min-width: 280px) and (max-width:350px){
+
+/* navbar */
+nav .container .row{margin-right: 0rem;}
+nav .container{padding-right: .2rem;padding-left: .2rem;}  
+nav .container .row h1{font-size: 1.5rem;}  
+nav form button,nav form input {
+    font-size: .8rem !important;
+    height: 2.3rem !important;
+    margin-top: .9rem !important;
+}
+nav form button{margin-right: 0rem !important;width: 3.5rem !important;}
+nav form button i{display: none !important;}
+/* navbar */
+
+/* page content */
+.data{padding-left: .5rem !important;}
+.data table thead td,
+.data table tbody td {width: 3rem;padding: .2rem;font-size: .8rem;}
+.data table tbody td i{font-size: .6rem;}
+/* page content */
+
+}
+ 
+/* moto g4, galasy s5, iphone x, iphone 6/7/8, pixel 2, pixel 2xl, iphone 6/7/8 plus */
+@media(min-width:360px) and (max-width:425px){
+
+/* navbar */
+nav .container .row{margin-right: 0rem;}
+nav .container{padding-right: .2rem;padding-left: .2rem;}  
+nav .container .row h1{font-size: 2rem;}  
+nav form button,nav form input {
+    font-size: .8rem !important;
+    height: 2.3rem !important;
+    margin-top: .9rem !important;
+}
+nav form button{margin-right: 0rem !important;width: 3.5rem !important;}
+nav form button i{display: none !important;}
+/* navbar */
+
+/* page content */
+.data{padding-left: .5rem !important;}
+.data table thead td,
+.data table tbody td {width: 4rem;padding: .5rem;font-size: .9rem;}
+.data table tbody td i{font-size: .6rem;}
+/* page content */
+
+}
+
+/* surface Duo */
+@media (min-width:426px) and (max-width:540px){
+nav form button{margin-right: 0rem !important;width: 9rem !important;}
+.data table thead td,
+.data table tbody td {width: 6rem;padding: 1rem;font-size: 1rem;}
+
+}
+
+/* Small Screen */
+@media(min-width:576px) and (max-width:767px){
+
+nav form button,nav form input {font-size: .9rem !important;height: 2.5rem !important;}
+nav h1{font-size: 1.8rem;}
+
+/* page content */
+.data{padding-left: 0rem !important;}
+.data table thead td{margin-bottom: .5rem;}
+
+.data table thead td,
+.data table tbody td {width: 4rem;}
+
+.data table thead td,
+.data table tbody td,
+.data table tbody td i{font-size: 1.1rem;}
+/* page content */
+
+}
+
+/*  Medium Screen */
+@media(min-width:768px) and (max-width:991px){
+
+nav form button,nav form input {font-size: 1rem !important;height: 2.5rem !important;}
+nav h1{font-size: 2rem;}
+
+/* page content */
+.data{padding-left: 0rem !important;}
+.data table thead td{margin-bottom: .5rem;}
+
+.data table thead td,
+.data table tbody td {width: 7rem;}
+
+.data table thead td,
+.data table tbody td,
+.data table tbody td i{font-size: 1.1rem;}
+/* page content */
+
+}
+
+/* responsive for ipad, ipad pro,laptop l is ok */
+/* laptop l */
+@media(min-width:1600px) and (max-width:2560px){
+nav h1{font-size: 4.5rem;}
+nav form button,nav form input {font-size: 1.5rem !important;height: 4.5rem !important;}
+nav form button{width: 11rem !important;}
+/* page content */
+.data table thead td{margin-bottom: .5rem;}
+
+.data table thead td,
+.data table tbody td {width: 11rem;}
+
+.data table thead td,
+.data table tbody td,
+.data table tbody td i{font-size: 2rem;}
+/* page content */
+}

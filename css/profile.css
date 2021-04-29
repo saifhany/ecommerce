@@ -1,0 +1,154 @@
+body{margin: auto;background-color:#F8F9FA;}
+
+i{cursor: pointer;}
+
+h1,h2,h3,h6,p,i,a,text,button,input,label{font-family: 'Play', sans-serif;}
+::selection{background-color: rgba(0,0,0,.3);color: #ffffff;}
+
+nav{background-color: #010a11}
+nav h1{
+    color: #a6a9b6;
+    padding-top: 1.1rem;
+    padding-bottom: 1rem;
+    text-transform: uppercase;
+    font-size: 2.5rem;}
+nav span{color: #db6400;}
+
+/* page content */
+section .data {padding-bottom: 3.5rem;}
+section i{font-size: 15rem;margin-top: 5rem !important;}
+section .data label{font-size: 1.2rem;}
+section .data input{
+    margin-left: 7rem; 
+    width: 24rem ;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    background: none;
+    border-color: #cacbd0;
+}
+section aside .asData{border-left: 1px solid #a6a9b6;}
+section aside .asData .asD a,
+section aside .asData .asD p{display: block;margin-top: .8rem;}
+section aside .asData .asD p span{display: block;margin-top: 1.2rem ;}
+section aside .asData .asD p span a{
+    display: inline;
+    padding: .6rem;
+    margin-right: 1.2rem;
+    color: #ffffff;
+    background-color: #0d6efd;
+    border-radius: 5px;
+}
+/* page content */
+
+
+/* about Us */
+.aboutUs{background-color: #010a11;margin-top: 7rem;}
+.aboutUs h2, .aboutUs p, .aboutUs textarea{color: #a6a9b6;}
+.aboutUs textarea{background-color:rgba(0, 0, 0, 0.3);border: none;}
+.aboutUs button{
+    background:none;
+    color: #a6a9b6;
+    border: 1px solid #a6a9b6;
+    border-radius: .4em;
+    font-size: 1.6rem;
+    transition: .6s ease ;}
+.aboutUs button:hover{background-color: #db6400;color: #ffffff;border: 1px solid #db6400;}
+.aboutUs i:hover button{color: #ffffff;}
+/* about Us */
+
+/* footer */
+footer i{color: #16697a;transition: .6s ease ;}
+footer i:hover{color: #db6400 ;}
+/* footer */
+
+/* galaxy fold */
+/* @media(min-width: 280px) and (max-width:350px){
+
+nav h1{font-size: 1.4rem;}
+/* content 
+section i{font-size: 6rem;}
+section .data label{font-size: 1rem;}
+section .data input{width: 8rem ;margin-left: 3rem;}
+section aside .asData{border-left:none;}
+section aside .asData .asD{padding-left: 0rem !important;}
+section aside .asData .asD a{font-size: .8rem;} 
+section aside .asData .asD p{font-size: .7rem;}
+/* content 
+} */
+
+/* galaxy fold */
+@media (min-width: 280px) and (max-width:350px){
+ 
+nav h1{font-size: 1.6rem;}
+/* content */
+section i{font-size: 6rem;}
+section .data input{width: 12rem ;margin-left: 2rem;}
+section aside .asData{border-left:none;}
+/* content */
+}
+
+/* moto g4, galasy s5, iphone x, iphone 6/7/8, pixel 2, pixel 2xl, iphone 6/7/8 plus */
+@media(min-width:360px) and (max-width:425px){
+
+nav h1{font-size: 2rem;}
+/* content */
+section i{font-size: 9rem;}
+section .data input{width: 17rem ;margin-left: 3rem;}
+section aside .asData{border-left:none;}
+/* content */
+}
+
+/* surface Duo */
+@media (min-width:426px) and (max-width:540px){
+section aside .asData{border-left:none;}
+}
+
+/* Small Screen */
+@media(min-width:576px) and (max-width:767px){
+
+nav h1{font-size: 1.8rem;}
+/* content */
+section i{font-size: 14rem;}
+section .data input{width: 20rem ;}
+section aside .asData{border-left:none;}
+/* content */
+}
+
+/*  Medium Screen */
+@media(min-width:768px) and (max-width:991px){
+
+nav h1{font-size: 2rem;}
+/* content */
+section i{font-size: 11rem;}
+section .data input{width: 14rem ;}
+section aside .asData .asD p span a{
+    display: block;
+    padding: .6rem;
+    width: 6rem;
+}
+/* content */
+
+}
+
+/* large screen */
+@media (min-width:992px) and (max-width:1200px){
+
+/* content */
+section .data input{width: 20rem ;}
+section aside .asData .asD p span a{margin-right: 1rem;}
+/* content */
+} 
+  
+/* responsive for ipad, ipad pro,laptop l is ok */
+/* laptop l */
+@media(min-width:1600px) and (max-width:2560px){
+
+nav h1{font-size: 4.5rem;}
+/* content */
+section i{font-size: 19rem;}
+section .data label {font-size: 1.8rem;}
+section .data input{width: 30rem;height: 4rem;font-size: 1.5rem;}
+section aside .asData .asD a,section aside .asData .asD p{font-size: 1.4rem;margin-bottom: .5rem;}
+/* content */
+}    
