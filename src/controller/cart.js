@@ -1,4 +1,5 @@
 const Cart = require('../models/cart');
+
 exports.addItemToCart = (req,res) =>{
     Cart.findOne({user:req.user._id})
     .exec((error,cart)  =>{
@@ -7,15 +8,18 @@ exports.addItemToCart = (req,res) =>{
             // if cart already exists then update cart by quantity
             const product = req.body.cartItems.product;
         const item = cart.cartItems.find(c => c.product == product);   
+        let condition , update;
             if(item){
-                Cart.findOneAndUpdate({user:req.user._id ,"cartItems.product":product},{
-                    "$set":{
-                       "cartItems" :{
-                        ...req.body.cartItems,
-                        quantity:item.quantity + req.body.cartItems.quantity
-                        }
+            condition={ "user":req.user._id ,"cartItems.product":product };
+            update={
+                "$set":{
+                   "cartItems.$" :{
+                    ...req.body.cartItems,
+                    quantity:item.quantity + req.body.cartItems.quantity
                     }
-                })
+                }
+            };
+                Cart.findOneAndUpdate(condition,update)
                 .exec((error,_cart)=>{
                     if(error) return res.status(400).json({error});
                     if(_cart){
@@ -24,11 +28,13 @@ exports.addItemToCart = (req,res) =>{
                 })
             }
             else{
-                Cart.findOneAndUpdate({user:req.user._id},{
+                condition={user:req.user._id};
+                update={
                     "$push":{
                         "cartItems":req.body.cartItems
                     }
-                })
+                };
+                Cart.findOneAndUpdate(condition,update)
                 .exec((error,_cart)=>{
                     if(error) return res.status(400).json({error});
                     if(_cart){
@@ -49,7 +55,7 @@ exports.addItemToCart = (req,res) =>{
                 if(cart){
                     return res.status(201).json({cart});
                 }
-            })
+            });
         }
-    })
+    });
 };

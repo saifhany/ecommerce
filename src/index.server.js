@@ -5,9 +5,12 @@ const app = express();
 const PORT = process.env.PORT;
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
+const path = require('path');
+const cors = require('cors');
 const {MONGOURL} = require('./key');
 // routes
-app.use(express.json());
+// app.use(express.json());
+
 const authRoutes = require('./routes/auth');
 const adminRoutes = require('./routes/admin/auth');
 const categoryRoutes = require('./routes/category');
@@ -15,12 +18,13 @@ const productRoutes = require('./routes/product');
 const cartRoutes = require('./routes/cart');
 //  environment variable or you can say constants
 // env.config();
-
-
 app.use(bodyParser.urlencoded({
     extended: true
   }));
-//   app.use(express.json());
+app.use(cors());
+app.use(express.json());
+
+app.use('/public',express.static(path.join(__dirname, 'uploads')));
 app.use('/api',adminRoutes);
 app.use('/api',authRoutes);
 app.use('/api',categoryRoutes);
